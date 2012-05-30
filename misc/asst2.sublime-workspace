@@ -1,0 +1,551 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"user",
+				"users"
+			],
+			[
+				"cupi",
+				"cupidDB"
+			],
+			[
+				"img",
+				"img"
+			],
+			[
+				"sub",
+				"sub	Function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Z/public_html/asst2/pages/browse_users_page.pm",
+			"settings":
+			{
+				"buffer_size": 2673,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Z/public_html/asst2/packages/cupidDB.pm",
+			"settings":
+			{
+				"buffer_size": 4850,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Z/public_html/asst2/pages/edit_profile_page.pm",
+			"settings":
+			{
+				"buffer_size": 3906,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Z/public_html/asst2/pages/signup_page.pm",
+			"settings":
+			{
+				"buffer_size": 3421,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Z/public_html/asst2/users/aaron_34/profile",
+			"settings":
+			{
+				"buffer_size": 915,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Z/public_html/asst2/engcupid.cgi",
+			"settings":
+			{
+				"buffer_size": 3236,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Z/public_html/asst2/diary.txt",
+			"settings":
+			{
+				"buffer_size": 869,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 219.0,
+		"selected_items":
+		[
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":",
+				":w - Save"
+			],
+			[
+				":W",
+				":w - Save"
+			],
+			[
+				":q",
+				"Set Syntax: SQL"
+			],
+			[
+				":close",
+				"File: Close All"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Z/public_html/asst2/pages/edit_profile_page.pm",
+		"/Z/public_html/asst2/engcupid.cgi",
+		"/Z/public_html/asst2/pages/messages_page.pm",
+		"/Z/public_html/asst2/diary.txt",
+		"/Z/public_html/asst2/packages/cupidDB.pm",
+		"/Z/public_html/asst2/pages/public_profile_page.pm",
+		"/Z/public_html/asst2/pages/signup_page.pm",
+		"/Z/public_html/asst2/pages/account_maintenance_page.pm",
+		"/Z/public_html/asst2/css/style.css",
+		"/Z/public_html/asst2/tmpl/links.tmpl",
+		"/Z/public_html/asst2/misc/parse_users.pl",
+		"/Z/public_html/asst2/users/aaron_34/profile",
+		"/Z/public_html/asst2/misc/cupidDB.pm",
+		"/C/Users/Chris/Desktop/Tray3/tray3.txt",
+		"/Z/public_html/asst2/pages/log_in_page.pm",
+		"/Z/public_html/asst2/pages/welcome_page.pm",
+		"/Z/public_html/asst2/pages/browse_users_page.pm",
+		"/Z/public_html/asst2/get_env.cgi",
+		"/Z/public_html/asst2/packages/cupidWrapper.pm",
+		"/Z/public_html/asst2/tmpl/main_page.tmpl",
+		"/Z/public_html/asst2/tmpl/signup.tmpl",
+		"/Z/public_html/asst2/log_in.cgi",
+		"/Z/public_html/asst2/browse_users.cgi",
+		"/Z/public_html/asst2/pages/signup.pm",
+		"/Z/public_html/asst2/signup.cgi",
+		"/Z/public_html/asst2/tmpl/links.txt",
+		"/Z/public_html/asst2/pages/welcome.pm",
+		"/Z/public_html/asst2/pages/welcome.cgi",
+		"/Z/cs3231/asst3-src/kern/vm/frametable.c",
+		"/Z/cs3231/asst3-src/kern/arch/mips/vm/dumbvm.c",
+		"/Z/cs3231/asst3-src/kern/include/vm.h",
+		"/Z/cs3231/asst3-src/design.txt",
+		"/Z/cs3231/asst3-src/kern/vm/addrspace.c",
+		"/Z/cs3231/asst3-src/kern/include/addrspace.h",
+		"/Z/cs3231/asst3-src/kern/arch/mips/vm/vm.c",
+		"/E/Downloads/Chrome/asst3osdesigndoc.txt",
+		"/Z/cs3231/asst3-src/kern/arch/mips/include/vm.h",
+		"/C/Users/Chris/Google Drive/ELEC4602 Exam Notes.gdoc",
+		"/Z/cs3231/asst3-src/kern/arch/mips/include/tlb.h",
+		"/Z/cs3231/asst3-src/kern/syscall/loadelf.c",
+		"/Z/cs3231/asst3-src/kern/arch/mips/vm/ram.c",
+		"/Z/cs3231/asst3-src/kern/thread/spinlock.c",
+		"/Z/cs3231/asst3-src/kern/include/lib.h",
+		"/Z/cs3231/asst3-src/kern/arch/mips/include/types.h",
+		"/C/Users/Chris/AppData/Roaming/Sublime Text 2/Packages/SublimeText-CTags-903461b/CTags.sublime-settings",
+		"/Z/cs3231/asst3-src/mk/os161.config.mk",
+		"/Z/cs3231/asst3-src/kern/arch/sys161/startup/start.S",
+		"/C/Users/Chris/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Z/cs3231/asst3-src/Makefile",
+		"/Z/cs3231/asst3-src/kern/vm/copyinout.c",
+		"/C/Users/Chris/Documents/MATLAB/scratch.m",
+		"/C/Users/Chris/Desktop/asst2_q4.SSC",
+		"/C/Users/Chris/Desktop/Comms Notes.txt",
+		"/C/Users/Chris/Desktop/asst_2_q3.SSC",
+		"/F/Wolfram Mathematica 8.0.1 for Windows + Keygen/ReadMe.txt",
+		"/E/Downloads/Chrome/fFigcUTp.txt",
+		"/C/Users/Chris/AppData/Roaming/Sublime Text 2/Packages/Vintage/vintage.py",
+		"/Z/cs2041/lab12/makemake.pl",
+		"/C/Users/Chris/Desktop/test.py",
+		"/Z/cs2041/lab12/medium/Makefile",
+		"/C/Users/Chris/AppData/Roaming/Sublime Text 2/Packages/Vintage/vintage.pyc",
+		"/C/Users/Chris/AppData/Roaming/Sublime Text 2/Packages/Vintage/README.TXT",
+		"/C/Users/Chris/AppData/Roaming/Sublime Text 2/Packages/Vintage/Default.sublime-keymap",
+		"/C/Users/Chris/AppData/Roaming/Sublime Text 2/Packages/Vintage/Default (Windows).sublime-keymap",
+		"/C/Users/Chris/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Chris/Desktop/update.bat"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"del",
+			"hashref",
+			"table",
+			"print",
+			"parse",
+			"print",
+			"pars",
+			"refre",
+			"create",
+			"cupid",
+			"init",
+			"ref=\"",
+			"  ",
+			"\\t",
+			"  ",
+			"engcupid.cgi/",
+			"([^d]).cgi",
+			"href=\"",
+			"option",
+			"ehi",
+			"vm_fault",
+			"tlb",
+			"tlb_read",
+			"KASSER",
+			"\n		",
+			"ehi",
+			"as_copy",
+			"tlb_write",
+			"frame_table_init",
+			"fine",
+			"my",
+			"\\w+'",
+			"range"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"ref=\"engcupid.cgi/",
+			"    ",
+			"",
+			"\\1",
+			"href=\"engcupid.cgi/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Z/public_html/asst2/pages/browse_users_page.pm",
+					"settings":
+					{
+						"buffer_size": 2673,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2610,
+								2610
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Perl/Perl.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 770.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Z/public_html/asst2/packages/cupidDB.pm",
+					"settings":
+					{
+						"buffer_size": 4850,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								538,
+								538
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Perl/Perl.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Z/public_html/asst2/pages/edit_profile_page.pm",
+					"settings":
+					{
+						"buffer_size": 3906,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2287,
+								2287
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Perl/Perl.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 644.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Z/public_html/asst2/pages/signup_page.pm",
+					"settings":
+					{
+						"buffer_size": 3421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2817,
+								2817
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Perl/Perl.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1330.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Z/public_html/asst2/users/aaron_34/profile",
+					"settings":
+					{
+						"buffer_size": 915,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								386,
+								386
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Z/public_html/asst2/engcupid.cgi",
+					"settings":
+					{
+						"buffer_size": 3236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								432,
+								432
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Z/public_html/asst2/diary.txt",
+					"settings":
+					{
+						"buffer_size": 869,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								868,
+								868
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"vm.c",
+				"kern/arch/mips/vm/vm.c"
+			],
+			[
+				"dumbvm",
+				"kern/arch/mips/vm/dumbvm.c"
+			],
+			[
+				"start.s",
+				"kern/arch/sys161/startup/start.S"
+			],
+			[
+				"addr",
+				"kern/include/addrspace.h"
+			],
+			[
+				"vm.h",
+				"kern/include/vm.h"
+			],
+			[
+				"copy",
+				"kern/vm/copyinout.c"
+			],
+			[
+				"",
+				"/F/asst_2_q3.SSC"
+			],
+			[
+				"make",
+				"/Z/cs2041/lab12/makemake.pl"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 179.0,
+	"status_bar_visible": true
+}

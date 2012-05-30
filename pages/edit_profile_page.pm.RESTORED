@@ -1,0 +1,29 @@
+package edit_profile_page;
+use base qw (Exporter);
+our @EXPORT = qw(render_edit_profile);
+use CGI qw(:all -debug);
+use lib 'packages/';
+use cupidWrapper;
+
+sub render_edit_profile {
+	my ($user) = (cookie('username') =~ /(\w{3,20})/);
+	if (defined $user) {
+		if (-e "users/$user/profile") {
+			open (P, "users/$user/profile");
+			add_content("<ul>");
+			while (<P>) {
+				add_content("<li>$_</li>\n");
+			}
+			add_content("</ul>");
+			if (-e "users/$user/image.jpg") {
+				add_content(img({-src=>"http://cgi.cse.unsw.edu.au/~cweb382/asst2/users/$user/image.jpg",-alt=>"Ugly Mug", -width=>"304",
+					-height=>"228", -border=>"0"}));
+			}
+		}
+	} else {
+		print redirect('welcome');
+	}
+	render_page();
+}
+
+return (1);

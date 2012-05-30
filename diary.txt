@@ -1,0 +1,24 @@
+Diary for Chris Webb
+
+I originally had my diary/log in my git repository, but then my project
+folder (including the .git directory) was deleted.
+
+From memory:
+Started the project 2 weeks ago. Did very little work
+except to setup the basic css layout.
+
+About 1 week ago I spend around 4 hours setting up some of the pages.
+26/05/12 - Refactored the project. 2 hours.
+
+Actual Diary:
+28/05/12 - Working on the final features. 5 hours.
+29/05/12 - Started work at 10:15 stopped at 11:45.
+29/05/12 - Got a few more features working. 2 hours. 
+29/05/12 - Aiming to get the rest of the assignment working:
+            * Matching
+            * Edit Profile
+            * Password Recovery
+           started at 8pm. Finished at 11:30.
+           Didn't finish because at 11:20pm an entire file
+           was corrupted (I hadn't remade my damn git
+           repository yet...).

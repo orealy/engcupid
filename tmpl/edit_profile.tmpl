@@ -1,0 +1,54 @@
+<h2>Edit Profile</h2>
+<form method="post">
+<table>
+<tr>
+	<td class="label">
+			Username
+		</td>
+		<td>
+			<input type="text" name="username" value="<tmpl_var name=username>">
+		</td>
+		<td class="error">
+			<tmpl_var name=error_username>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="label">
+			Password
+		</td>
+		<td>
+			<input type="password" name="password" value="">
+		</td>
+		<td class="error">
+			<tmpl_var name=error_password>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="label">
+			Verify password
+		</td>
+		<td>
+			<input type="password" name="verify" value="">
+		</td>
+		<td class="error">
+			<tmpl_var name=error_verify>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="label">
+			Email (required)
+		</td>
+		<td>
+			<input type="text" name="email" value="<tmpl_var name=email>">
+		</td>
+		<td class="error">
+			<tmpl_var name=error_email>
+		</td>
+	</tr>
+</table>
+
+<input type="submit">
+</form>
