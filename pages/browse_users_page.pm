@@ -7,10 +7,11 @@ use cupidWrapper;
 use cupidDB;
 
 sub render_browse {
-	# Extract all fields from the synthetic data.
-	if (!cookie('username')) {
+	if (!defined cookie('username')) {
 		print redirect('welcome');
+		return;
 	}
+
 	$user_group = param('group');
 	if (!defined $user_group or !$user_group =~ /^([a-z]|all)$/i) {
 		$user_group = 'all';
