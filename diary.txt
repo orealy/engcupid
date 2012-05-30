@@ -22,3 +22,6 @@ Actual Diary:
            Didn't finish because at 11:20pm an entire file
            was corrupted (I hadn't remade my damn git
            repository yet...).
+30/05/12 - When I submitted the project just before midnight
+           the database wasn't updating and the matching wasn't on.
+           Spent an hour fixing this, then submitted.

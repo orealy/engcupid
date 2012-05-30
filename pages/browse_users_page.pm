@@ -4,6 +4,7 @@ our @EXPORT = qw(render_browse);
 use lib 'packages/';
 use CGI qw(:all -debug);
 use cupidWrapper;
+use cupidDB;
 
 sub render_browse {
 	# Extract all fields from the synthetic data.
@@ -95,13 +96,117 @@ sub render_browse {
 	render_page();
 }
 
+# Arbitrary weights for events.
+my ($match_bonus, $partial_bonus, $mismatch_cost) = (10, 5, -5);
+my $initial_match = 20;
+sub compare_numeric ($$) {
+	my ($a1, $a2) = @_;
+	if ($a1 and $a2) {
+		my ($a1_low, $a1_high) = ($a1 =~ /(\d+)/);
+		if ($a1_low and $a1_high and $a2 > $age1_low and $a2 < $a1_high) {
+			$match += $match_bonus;
+		} elsif ($a1_low and $a1_high) {
+			my $range = $a1_high - $a1_low;
+			my $mean = ($a1_low + $a1_high)/2;
+			my $diff = abs($a2 - $mean);
+
+			return $partial_bonus / ($diff / $range);
+		} elsif ($a1_low and $a1_low == $a2) {
+			return $match_bonus;
+		} else {
+			return $mismatch_cost;
+		}
+	}
+
+	return 0;
+}
+
+sub string_data_compare($$) {
+	my ($s1, $s2) = @_;
+	my $match_bonus = 0;
+
+	#add_content("comparing $s1 to $s2...");
+	if (!$s1 or !$s2) {
+		return 0;
+	}
+
+	# Strip punctuation
+	$s1 =~ s/[[:punct:]]/ /g;
+	$s2 =~ s/[[:punct:]]/ /g;
+
+	# Split into words
+	my @s1_list = split(/ /, $s1);
+	my @s2_list = split(/ /, $s2);
+
+	# Hash input words as seen/vs unseen
+	%hash_s1 = map { $_ => 1 } @s1_list;	
+
+	# Compare keys. Add points for common words.
+	for my $item (@s2_list) {
+		$match_bonus += 3 if (exists $hash_s1{$item});
+	}
+
+	my $min_items = ($#s1_list < $#s2_list) ? $#s1_list : $#s2_list;
+	$match_bonus = $match_bonus / ($min_items + 1);
+
+	return $match_bonus;
+}
+
+sub directed_match ($$) {
+	my ($user1, $user2) = @_;
+	my %u1_hash = cupidDB->db_all_user_data($user1);
+	my %u2_hash = cupidDB->db_all_user_data($user2);
+
+	my $match = $initial_match;
+
+	# Looking For vs Me
+	# age, gender, editor, engineering_discipline, favourite_star_wars_movie,
+	# height, operating_systems, programming_languages, weightr
+
+	# Check Gender
+	my ($gender1, $gender2) = ($u1_hash{'gender_looking'}, $u2_hash{'gender_my'});
+	if ($gender1 and $gender2 and !(lc($gender1) eq lc ($gender2))) {
+		$match = 0;
+	}
+
+	# Check numerical results: Age, Weight, Height
+	# Check age range
+	my ($age1, $age2) = ($u1_hash{'age_looking'}, $u2_hash{'age_me'});	
+	$match += compare_numeric($age1, $age2);
+
+	# Check weight range
+	my ($weight1, $weight2) = ($u1_hash{'weight_looking'}, $u2_hash{'weight_me'});	
+	$match += compare_numeric($weight1, $weight2);
+
+	my ($height1, $height2) = ($u1_hash{'height_looking'}, $u2_hash{'height_me'});	
+	$match += compare_numeric($height1, $height2);
+
+	# Check string inputs.
+	# Editor, Engineering Discipline, Star Wars Movie, Operating Systems, Programming Languages
+	@string_fields = ('editor', 'engineering_discipline', 'favourite_star_wars_movie',
+					  'operating_systems', 'programming_languages');
+	for my $field (@string_fields) {
+		my ($str1, $str2) = ($u1_hash{"$field"."_looking"}, $u2_hash{"$field"."_me"});
+		$match += string_data_compare($str1, $str2);	
+	}
+	return $match;
+}
+
 sub match_users ($$) {
 	my ($user1, $user2) = @_;
-	# Check Gender
+	$match1 = directed_match($user1, $user2);
+	$match2 = directed_match($user2, $user1);
 
-	# 
-	my $match = int(rand(100));
-	return $match;
+	$harmonic_mean = int((2*$match1*$match2)/($match1+$match2+1));
+
+	if ($harmonic_mean < 0) {
+		$harmonic_mean = 0;
+	}
+	if ($harmonic_mean > 100) {
+		$harmonic_mean = 100;
+	}
+
+	return $harmonic_mean;
 }
 
 return (1);
